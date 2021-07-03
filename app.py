@@ -18,7 +18,7 @@ import pyrebase
 config = {
      "apiKey": "AIzaSyB1407Jf6sosGEFnO-1h6rCKwWpzbW1REQ",
      "authDomain": "farmgrid-67b05.firebaseapp.com",
-     "databaseURL": "https://farmgrid-67b05-default-rtdb.firebaseio.com/"
+     "databaseURL": "https://farmgrid-67b05-default-rtdb.firebaseio.com/",
      "projectId": "farmgrid-67b05",
      "storageBucket": "farmgrid-67b05.appspot.com",
      "messagingSenderId": "602553499578",
@@ -32,11 +32,11 @@ storage = firebase.storage()
 
 db = firebase.database()
 
-#auth=firebase.auth()
-#try:
-#    login = auth.sign_in_with_email_and_password("yuvalabs@gmail.com", "shambo1234&")
-#except:
-#    print("hello")
+auth=firebase.auth()
+try:
+    login = auth.sign_in_with_email_and_password("irisscannerprjt@gmail.com", "shambo1234)")
+except:
+    print("hello")
 
 DN = ""
 
