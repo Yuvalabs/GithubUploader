@@ -199,7 +199,7 @@ def crop_prediction():
     if request.method == 'POST':
         DN = str(request.form['DeviceNo'])
 
-        all_users = db.child("LandParameters/"+ DN +"/").get().val()
+        all_users = db.child("LandParameters/"+ DN ).get().val()
 	for user in all_users.each():
  	  if ( user.key() == 'N' ):
   	    N = user.val()
@@ -238,7 +238,7 @@ def fert_recommend():
 
     crop_name = str(request.form['cropname'])
     
-    all_users = db.child("LandParameters/"+ DN +"/").get()
+    all_users = db.child("LandParameters/"+ DN).get()
     for user in all_users.each():
       if ( user.key() == 'N' ):
         N = user.val()
