@@ -285,7 +285,7 @@ def fert_recommend():
 # render disease prediction result page
 
 
-@app.route('/disease-predict', methods=['POST'])
+@app.route('/disease-predict', methods=['GET','POST'])
 def disease_prediction():
     title = 'Harvestify - Disease Detection'
            
